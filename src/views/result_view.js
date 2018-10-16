@@ -9,13 +9,23 @@ ResultView.prototype.bindEvents = function(){
     const isNumberPrime = event.detail;
     // debugger;
     this.displayResult(isNumberPrime);
-
   })
 };
 
+// const num = function(){
+//   PubSub.publish()
+// }
+
 ResultView.prototype.displayResult = function(result){
   const resultElement = document.querySelector('#result');
-  resultElement.textContent = `The result is ${result}`;
+  resultElement.textContent = this.resultText(result)};
+
+  ResultView.prototype.resultText = function(result){
+    if (result === true){
+      return "${num} This number is indeed prime"}
+      else{
+        return "This is not a prime number"
+      }
   // debugger;
-}
+};
 module.exports = ResultView;

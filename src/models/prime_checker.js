@@ -4,6 +4,10 @@ const PrimeChecker = function(){
 
 };
 
+// PrimeChecker.prototype.getNumber = function(){
+//   PubSub.subscribe('FormView:number')
+// }
+
 PrimeChecker.prototype.bindEvents = function(){
   PubSub.subscribe('FormView:number-submitted', (event) =>{
     console.log(event);
