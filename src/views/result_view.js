@@ -12,6 +12,8 @@ ResultView.prototype.bindEvents = function(){
   })
 };
 
+
+
 // const num = function(){
 //   PubSub.publish()
 // }
@@ -22,7 +24,7 @@ ResultView.prototype.displayResult = function(result){
 
   ResultView.prototype.resultText = function(result){
     if (result === true){
-      return "${num} This number is indeed prime"}
+      return "This number is indeed prime"
       else{
         return "This is not a prime number"
       }
